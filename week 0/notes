@@ -1,0 +1,28 @@
+product class { name , price , quantity}
+expiringProduct implements product {} cheese, biscuits
+else stay product mobile, tv
+shipping class -> cheese , tv
+shippable class implements product {weight}
+non shppable -> mobile scratch items
+cart class { product, quantity } restriction on product items dont exceed availability
+customers do checkout on products in cart
+print in the console checout details
+checkout details {order subtotal, shiping fees, paid amount, customer current balance after payment }
+give  an error message if cart empty, insufficient balance, one product is out of stock or expired
+collect all items that need to be shipped and send them to ShippingService implements an interface {String getName, double getWeight}
+accepts a list of objects 
+cover corner cases like empty cart, insufficient balance, out of stock, expired products
+
+//////////////////////////////////////
+
+product class 
+
+delegation pattern for CartItem and ShippableItem
+
+cart class -> list of items-> payment on it 
+
+shippingservice class -> more information of items to ship if shippable process notice
+
+checkout class -> process checkout and print details
+
+eCommerce class -> main class to run the program
